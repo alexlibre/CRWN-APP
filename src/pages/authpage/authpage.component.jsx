@@ -4,10 +4,10 @@ import SignUp from '../../components/auth/sign-up.component'
 import './authpage.styles.scss'
 
 const AuthPage = () => (
-    <div className="auth-page">
+    <section className="auth-page">
         <SignIn />
         <SignUp />
-    </div>
+    </section>
 )
 
 export default AuthPage

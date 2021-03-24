@@ -16,13 +16,13 @@ export default class ShopPage extends React.Component {
         const { collections } = this.state
 
         return (
-            <div className="shop-page">
+            <section className="shop-page">
                 <h1>Shop page</h1>
                 {
                     collections.map(({id, ...collectionProps}) => <CollectionPreview key={id} {...collectionProps} />)
                 }
                 
-            </div>
+            </section>
         )
     }
 }
