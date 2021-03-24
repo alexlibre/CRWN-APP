@@ -12,16 +12,16 @@ const Header = ({ currentUser }) => (
         </Link>
         <ul className="options">
             <li className="option">
-                <Link to="/shop">Shop</Link>
+                <Link to="/shop"><span>Shop</span></Link>
             </li>
             <li className="option">
-                <Link to="/contact">Contact</Link>
+                <Link to="/contact"><span>Contact</span></Link>
             </li>
             {
                 currentUser !== null ?
-                <li className="option" onClick={signOut}>Sign out</li> :
+                <li className="option">{currentUser.email} - <span onClick={signOut}>Sign out</span></li> :
                 <li className="option">
-                    <Link to="/auth">Auth</Link>
+                    <Link to="/auth"><span>Auth</span></Link>
                 </li>
             }
         </ul>

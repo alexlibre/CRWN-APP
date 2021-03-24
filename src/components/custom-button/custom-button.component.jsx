@@ -3,7 +3,7 @@ import './custom-button.styles.scss'
 
 const CustomButton = ({children, ...otherProps}) => (
     <button
-        className={`${otherProps.isGoogleSignIn ? 'google-sign-in ' : ''}custom-button`}
+        className={`${otherProps.google ? 'google-sign-in ' : ''}custom-button`}
         {...otherProps}>{children}</button>
 )
 
